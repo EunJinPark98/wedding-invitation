@@ -7,7 +7,10 @@ import "./App.css";
 function App() {
   return (
     <Container>
-      
+      {/* 꽃잎 애니메이션 요소 */}
+{[...Array(9)].map((_, i) => (
+  <div key={i} className="petal"></div>
+))}
       {/* 웨딩사진 배경 메인 박스 */}
       <Card className="main-hero-card text-center mb-5"
       style={{ backgroundImage: "url('/noImage.jpg')"}}>
@@ -34,6 +37,7 @@ function App() {
 
       {/* 투명 배경 인사말 */}
       <div className="transparent-message text-center mt-5 mb-4">
+        <Image src="deco1.png" className="deco1-icon"/>
         <p>
           평범한 두 사람이 만나<br />
           서로의 하루를 재미있고 특별하게 만들어 가고 있습니다.
@@ -47,7 +51,7 @@ function App() {
           {["noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg"].map((img, idx) => (
             <Col xs={6} md={4} key={idx}>
               <img
-                src={`/${img}`}
+                src={`https://eunjinpark98.github.io/wedding-invitation/${img}`}
                 alt={`사진${idx + 1}`}
                 className="gallery-img"
               />
@@ -64,11 +68,11 @@ function App() {
           가까운 가족분들만 모시고 결혼식을 올리고자 하오니 <br/>
           귀한 걸음으로 함께해 주시면 감사하겠습니다.
          </p>
-        <Image src="https://eunjinpark98.github.io/wedding-invitation/weddingHall.jpg" />
+        <Image src="https://eunjinpark98.github.io/wedding-invitation/weddingHall.jpg" className="weddingHall-img"/>
         <p className="mt-3">
           2025. 06. 22 일요일 11시<br/>
           경기 용인시 수지구 성복2로 408 1층 모네 홀</p>
-        <Button variant="outline-primary" href="https://naver.com" target="_blank">
+        <Button variant="outline-primary" href="https://map.naver.com/p/entry/place/2092199352?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.0456143&lat=37.3227088&c=15.00,0,0,0,dh" target="_blank">
           지도 보기
         </Button>
       </Card>
