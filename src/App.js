@@ -15,21 +15,21 @@ function App() {
       <Card className="main-hero-card text-center mb-5"
       style={{ backgroundImage: "url('/noImage.jpg')"}}>
         <Card.Body className="d-flex flex-column">
-          <h5 className="mt-3">We are getting married</h5>
+          <h1 className="mt-3">We are getting married</h1>
           <p>2025.06.22 (SUN) 11:00 AM</p>
         </Card.Body>
       </Card>
 
       {/* 신랑신부 소개 */}
       <Card className="p-3 mb-5 shadow-sm rounded-4">
-        <h4 className="text-center mb-4">신랑 & 신부</h4>
+        <h4 className="text-center mb-4">신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon"/> 신부</h4>
         <Row>
           <Col xs={6} className="text-center">
-            <Image src="https://eunjinpark98.github.io/wedding-invitation/noImage.jpg" className="profile-img" />
+            <Image src="" className="profile-img" />
             <p className="mt-2"><strong>김선일</strong></p>
           </Col>
           <Col xs={6} className="text-center">
-            <Image src="https://eunjinpark98.github.io/wedding-invitation/noImage.jpg" className="profile-img" />
+            <Image src="" className="profile-img" />
             <p className="mt-2"><strong>박은진</strong></p>
           </Col>
         </Row>
@@ -38,7 +38,7 @@ function App() {
       {/* 투명 배경 인사말 */}
       <div className="transparent-message text-center mt-5 mb-4">
         <Image src="deco1.png" className="deco1-icon"/>
-        <p>
+        <p className="p1">
           평범한 두 사람이 만나<br />
           서로의 하루를 재미있고 특별하게 만들어 가고 있습니다.
         </p>
@@ -79,7 +79,7 @@ function App() {
 
       {/* footer 느낌 인사말 */}
       <footer className="footer-message text-center p-4">
-        <p className="pt-4">
+        <p className="pt-5">
           이제는 서로를 아끼고 사랑하는 마음으로<br />
           부부로써 함께하려 합니다.
         </p>
