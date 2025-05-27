@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  font-family: serif;
+  background-color: #F9F5F6;
+  color: #4A4A4A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4, h5 {
+  color: #B76E79;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-hero-card {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
   color: white;
+  position: relative;
+  border: none;
+  height: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-hero-card h5,
+.main-hero-card p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* 글자 가독성 향상 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-img {
+  width: 230px;
+  height: 280px;
+}
+
+.gallery-img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.btn-outline-primary {
+  border-color: #7A4E57;
+  color: #7A4E57;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #7A4E57;
+  color: white;
+  border-color: #7A4E57;
+}
+
+.footer-message {
+  background-color: #B76E79;
+  color: #fff0f3;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }

@@ -1,24 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { Container, Card, Button, Row, Col, Image, Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <Container>
+      
+      {/* 웨딩사진 배경 메인 박스 */}
+      <Card className="main-hero-card text-center mb-5"
+      style={{ backgroundImage: "url('/noImage.jpg')"}}>
+        <Card.Body className="d-flex flex-column">
+          <h5 className="mt-3">We are getting married</h5>
+          <p>2025.06.22 (SUN) 11:00 AM</p>
+        </Card.Body>
+      </Card>
+
+      {/* 신랑신부 소개 */}
+      <Card className="p-3 mb-5 shadow-sm rounded-4">
+        <h4 className="text-center mb-4">신랑 & 신부</h4>
+        <Row>
+          <Col xs={6} className="text-center">
+            <Image src="/noImage.jpg" className="profile-img" />
+            <p className="mt-2"><strong>김선일</strong></p>
+          </Col>
+          <Col xs={6} className="text-center">
+            <Image src="/noImage.jpg" className="profile-img" />
+            <p className="mt-2"><strong>박은진</strong></p>
+          </Col>
+        </Row>
+      </Card>
+
+      {/* 투명 배경 인사말 */}
+      <div className="transparent-message text-center mt-5 mb-4">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          평범한 두 사람이 만나<br />
+          서로의 하루를 재미있고 특별하게 만들어 가고 있습니다.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+      </div>
+
+      {/* 우리 이야기 - 그리드 사진 갤러리 */}
+      <Card className="p-3 mb-5 shadow-sm rounded-4">
+        <h4 className="text-center mb-3"></h4>
+        <Row className="g-3">
+          {["noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg"].map((img, idx) => (
+            <Col xs={6} md={4} key={idx}>
+              <img
+                src={`/${img}`}
+                alt={`사진${idx + 1}`}
+                className="gallery-img"
+              />
+            </Col>
+          ))}
+        </Row>
+      </Card>
+
+
+      {/* 장소 안내 */}
+      <Card className="text-center p-3 shadow-sm rounded-4 mb-5">
+        <h5>장소 안내</h5>
+        <Image src="/noImage.jpg" />
+        <p className="mt-3">경기 용인시 수지구 성복2로 408 1층</p>
+        <Button
+          variant="outline-primary"
+          href="https://naver.com"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          지도 보기
+        </Button>
+      </Card>
+
+      {/* footer 느낌 인사말 */}
+      <footer className="footer-message text-center p-4">
+        <p className="pt-4">
+          이제는 서로를 아끼고 사랑하는 마음으로<br />
+          부부로써 함께하려 합니다.
+        </p>
+        <p className="text-muted">저희의 시작을 축복해 주세요.</p>
+      </footer>
+    </Container>
   );
 }
 
