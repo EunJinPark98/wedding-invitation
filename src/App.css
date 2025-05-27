@@ -38,6 +38,11 @@ body {
   line-height: 1.5rem;
 }
 
+.p2{
+  font-size: 0.7rem;
+  color: #777;
+}
+
 h4, h5 {
   font-family: 'SDSamliphopangche_Basic';
   color: #B76E79;
@@ -108,7 +113,7 @@ h4, h5 {
 /* 꽃잎 공통 스타일 */
 .petal {
   position: fixed;
-  top: -25px;
+  top: -28px;
   width: 30px;
   height: 30px;
   background-image: url('https://eunjinpark98.github.io/wedding-invitation/heart.png');
