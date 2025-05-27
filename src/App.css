@@ -20,11 +20,11 @@ h4, h5 {
 
 .main-hero-card h5,
 .main-hero-card p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* 글자 가독성 향상 */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .profile-img {
-  width: 230px;
+  width: 200px;
   height: 280px;
 }
 

@@ -22,11 +22,11 @@ function App() {
         <h4 className="text-center mb-4">신랑 & 신부</h4>
         <Row>
           <Col xs={6} className="text-center">
-            <Image src="/noImage.jpg" className="profile-img" />
+            <Image src="https://eunjinpark98.github.io/wedding-invitation/noImage.jpg" className="profile-img" />
             <p className="mt-2"><strong>김선일</strong></p>
           </Col>
           <Col xs={6} className="text-center">
-            <Image src="/noImage.jpg" className="profile-img" />
+            <Image src="https://eunjinpark98.github.io/wedding-invitation/noImage.jpg" className="profile-img" />
             <p className="mt-2"><strong>박은진</strong></p>
           </Col>
         </Row>
@@ -59,14 +59,16 @@ function App() {
 
       {/* 장소 안내 */}
       <Card className="text-center p-3 shadow-sm rounded-4 mb-5">
-        <h5>장소 안내</h5>
-        <Image src="/noImage.jpg" />
-        <p className="mt-3">경기 용인시 수지구 성복2로 408 1층</p>
-        <Button
-          variant="outline-primary"
-          href="https://naver.com"
-          target="_blank"
-        >
+        <h5>결혼식</h5>
+         <p className="mt-3">
+          가까운 가족분들만 모시고 결혼식을 올리고자 하오니 <br/>
+          귀한 걸음으로 함께해 주시면 감사하겠습니다.
+         </p>
+        <Image src="https://eunjinpark98.github.io/wedding-invitation/weddingHall.jpg" />
+        <p className="mt-3">
+          2025. 06. 22 일요일 11시<br/>
+          경기 용인시 수지구 성복2로 408 1층 모네 홀</p>
+        <Button variant="outline-primary" href="https://naver.com" target="_blank">
           지도 보기
         </Button>
       </Card>
