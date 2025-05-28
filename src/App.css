@@ -39,7 +39,7 @@ body {
 }
 
 .p2{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #777;
 }
 
@@ -65,8 +65,9 @@ h4, h5 {
 }
 
 .main-hero-card h1{
+  font-family: 'SDSamliphopangche_Basic';
   color: #B76E79;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-shadow: 1px 1px 4px #B76E79;
 }
 
