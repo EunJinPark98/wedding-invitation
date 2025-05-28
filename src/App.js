@@ -20,6 +20,22 @@ function App() {
         </Card.Body>
       </Card>
 
+      {/* 초대말씀 */}
+      <Card className="p-3 mb-5 shadow-sm rounded-4 text-center">
+        <Card.Body className="d-flex flex-column">
+          <h5 className="mb-4">초대장</h5>
+          <p className="p2">
+            인생의 소중한 날,<br/>
+            저희 두 사람의 새로운 시작을<br/>
+            사랑하는 가족과 친지분들만 모시고<br/>
+            결혼식을 올리려 합니다.<br/>
+            <br/>
+            작지만 진심을 담은 자리,<br/>
+            귀한 걸음으로 함께해 주시면 감사하겠습니다.
+          </p>
+        </Card.Body>
+      </Card>
+
       {/* 신랑신부 소개 */}
       <Card className="p-3 mb-5 shadow-sm rounded-4">
         <h4 className="text-center mb-4">신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon"/> 신부</h4>
@@ -48,7 +64,7 @@ function App() {
       <Card className="p-3 mb-5 shadow-sm rounded-4">
         <h4 className="text-center mb-3"></h4>
         <Row className="g-3">
-          {["noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg"].map((img, idx) => (
+          {["noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg"].map((img, idx) => (
             <Col xs={6} md={4} key={idx}>
               <img
                 src={`https://eunjinpark98.github.io/wedding-invitation/${img}`}
@@ -63,11 +79,7 @@ function App() {
 
       {/* 장소 안내 */}
       <Card className="text-center p-3 shadow-sm rounded-4 mb-5">
-        <h5>결혼식</h5>
-         <p className="mt-3 p2">
-          가까운 가족분들만 모시고 결혼식을 올리고자 하오니 <br/>
-          귀한 걸음으로 함께해 주시면 감사하겠습니다.
-         </p>
+        <h5>오시는 길</h5>
         <Image src="https://eunjinpark98.github.io/wedding-invitation/weddingHall.jpg" className="weddingHall-img"/>
         <p className="mt-4">
           2025. 06. 22 일요일 11시<br/>
