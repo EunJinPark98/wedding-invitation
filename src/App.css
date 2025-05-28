@@ -43,6 +43,34 @@ body {
   color: #777;
 }
 
+.p3{
+  font-size: 1.8rem;
+}
+
+.double-strike {
+  position: relative;
+  display: inline-block;
+  color: #000;
+}
+
+.double-strike::before,
+.double-strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: black;
+}
+
+.double-strike::before {
+  top: 40%; /* 위쪽 선 */
+}
+.double-strike::after {
+  top: 60%; /* 아래쪽 선 */
+}
+
+
 h4, h5 {
   font-family: 'SDSamliphopangche_Basic';
   color: #B76E79;
@@ -76,6 +104,16 @@ h4, h5 {
   height: 280px;
 }
 
+.profile-img2{
+  width: 180px;
+  height: 180px;
+}
+
+.modal-intro{
+  font-family: 'GangwonEduSaeeum_OTFMediumA';
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+}
 .deco1-icon{
   width: 100px;
 }
