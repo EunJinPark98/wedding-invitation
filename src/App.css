@@ -122,6 +122,9 @@ h4, h5 {
   width:20px;
 }
 
+.deco3-icon{
+  width:40px;
+}
 .gallery-img {
   border-radius: 10px;
   object-fit: cover;

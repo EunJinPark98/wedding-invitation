@@ -29,16 +29,21 @@ function App() {
       {/* 초대말씀 */}
       <Card className="p-3 mb-5 shadow-sm rounded-4 text-center">
         <Card.Body className="d-flex flex-column">
-          <h5 className="mb-4">초대장</h5>
-          <p className="p2">
-            인생의 소중한 날,<br/>
-            저희 두 사람의 새로운 시작을<br/>
-            사랑하는 가족과 친지분들만 모시고<br/>
-            결혼식을 올리려 합니다.<br/>
-            <br/>
-            작지만 진심을 담은 자리,<br/>
-            귀한 걸음으로 함께해 주시면<br/>감사하겠습니다.
-          </p>
+          <h5>초대장</h5>
+          <Row>
+            <Col>
+              <Image src="https://eunjinpark98.github.io/wedding-invitation/letter.png" className="deco3-icon mb-4"/>
+              <p className="p2">
+                인생의 소중한 날,<br/>
+                저희 두 사람의 새로운 시작을<br/>
+                사랑하는 가족과 친지분들만 모시고<br/>
+                결혼식을 올리려 합니다.<br/>
+                <br/>
+                작지만 진심을 담은 자리,<br/>
+                귀한 걸음으로 함께해 주시면<br/>감사하겠습니다.
+              </p>
+            </Col>
+          </Row>
         </Card.Body>
       </Card>
 
