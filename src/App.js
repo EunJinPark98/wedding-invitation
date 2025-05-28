@@ -37,7 +37,7 @@ function App() {
 
       {/* 투명 배경 인사말 */}
       <div className="transparent-message text-center mt-5 mb-4">
-        <Image src="deco1.png" className="deco1-icon"/>
+        <Image src="https://eunjinpark98.github.io/wedding-invitation/deco1.png" className="deco1-icon"/>
         <p className="p1">
           평범한 두 사람이 만나<br />
           서로의 하루를 재미있고 특별하게 만들어 가고 있습니다.
