@@ -32,12 +32,11 @@ function App() {
           <h5>초대장</h5>
           <Row>
             <Col>
-              <Image src="https://eunjinpark98.github.io/wedding-invitation/letter.png" className="deco3-icon mb-4"/>
-              <p className="p2">
+              <p className="p2 mt-4">
                 인생의 소중한 날,<br/>
                 저희 두 사람의 새로운 시작을<br/>
                 사랑하는 가족과 친지분들만 모시고<br/>
-                결혼식을 올리려 합니다.<br/>
+                작은 결혼식을 올리려 합니다.<br/>
                 <br/>
                 작지만 진심을 담은 자리,<br/>
                 귀한 걸음으로 함께해 주시면<br/>감사하겠습니다.
@@ -92,7 +91,7 @@ function App() {
       <Card className="text-center p-3 shadow-sm rounded-4 mb-5">
         <h5>오시는 길</h5>
         <Image src="https://eunjinpark98.github.io/wedding-invitation/weddingHall.jpg" className="weddingHall-img"/>
-        <p className="mt-4">
+        <p className="mt-4 p4">
           2025. 06. 22 일요일 11시<br/>
           경기 용인시 수지구 성복2로 408 1층</p>
         <Button variant="outline-primary" href="https://map.naver.com/p/entry/place/2092199352?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.0456143&lat=37.3227088&c=15.00,0,0,0,dh" target="_blank">

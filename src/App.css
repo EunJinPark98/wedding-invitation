@@ -47,6 +47,10 @@ body {
   font-size: 1.8rem;
 }
 
+.p4{
+  font-size: 1.4rem;
+}
+
 .double-strike {
   position: relative;
   display: inline-block;
@@ -123,7 +127,7 @@ h4, h5 {
 }
 
 .deco3-icon{
-  width:40px;
+  width:30px;
 }
 .gallery-img {
   border-radius: 10px;
