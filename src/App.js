@@ -19,7 +19,7 @@ function App() {
     {
       label: "🌸 신부",
       name: "박은진",
-      bankInfo: "토스뱅크 1001-1742-0122"
+      bankInfo: "토스뱅크 1001-4630-7887"
     }
   ];
 
