@@ -51,6 +51,11 @@ body {
   font-size: 1.2rem;
 }
 
+.p5{
+  font-size: 1.0rem;
+  color: #777;
+}
+
 .double-strike {
   position: relative;
   display: inline-block;
