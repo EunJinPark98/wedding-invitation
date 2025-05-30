@@ -23,6 +23,7 @@ function App() {
         <Card.Body className="d-flex flex-column">
           <h1 className="mt-3">We are getting married</h1>
           <p>2025.06.22 (SUN) 11:00 AM</p>
+          <h1 className="mt-5">아직 청첩장 제작중입니다.<br/> (제작완료 예정 6/4)<br/>From.은진</h1>
         </Card.Body>
       </Card>
 
@@ -50,7 +51,7 @@ function App() {
       <Card className="p-3 mb-5 shadow-sm rounded-4">
         <h4 className="text-center mb-4">신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon"/> 신부</h4>
         <Row>
-          <Col xs={6} className="text-center" onClick={handleGroomModalOpen} style={{ cursor: "pointer" }}>
+          <Col xs={6} className="text-center">
             <Image src="" className="profile-img" />
             <p className="mt-2"><strong>김선일</strong></p>
           </Col>
@@ -107,23 +108,6 @@ function App() {
         </p>
         <p className="text-muted">저희의 시작을 축복해 주세요.</p>
       </footer>
-
-
-
-      <Modal show={showGroomModal} onHide={handleGroomModalClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>신랑 <span className="double-strike">자랑</span> 소개</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="text-center modal-intro">
-          <Image src="https://eunjinpark98.github.io/wedding-invitation/suniry.jpg" className="profile-img2 mb-3" />
-          <p className="p3"><strong>제 남편 김선일은요!</strong></p>
-          <p>항상 아침 일찍 먼저 일어나서 출근 준비를 하고<br/>아직 자고있는 저를 깨우러옵니다.<br/> 
-             더 잘꺼라고 눈도 못뜨는 저를 달래며<br/>일어날때까지 다리를 주물러주고<br/>
-             제가 일어나서 출근준비를 할때는<br/>회사에 가져갈 점심 도시락을 싸줍니다<br/><br/>
-             집안일도 잘하고 늘 표현해주고<br/>먹고 싶은게 있으면 바로 나가서 사다주고<br/>
-             저를 아기공주님처럼 대해주는<br/>세상 천사같은 남편입니다!<br/></p>
-        </Modal.Body>
-      </Modal>
     </Container>
   );
 }
