@@ -42,7 +42,7 @@ function App() {
         <Card.Body className="d-flex flex-column">
           <h1 className="mt-3">We are getting married</h1>
           <p>2025.06.22 (SUN) 11:00 AM</p>
-          <h1 className="mt-5">아직 청첩장 제작중입니다.<br/> (제작완료 예정 6/4)<br/>From.은진</h1>
+          <h1 className="mt-5">아직 청첩장 제작중입니다.<br/> (제작완료 예정 6/4)<br/>-은진-</h1>
         </Card.Body>
       </Card>
 
@@ -132,7 +132,7 @@ function App() {
               그 마음에 보답할 수 있도록<br/>
               서로를 아끼고 존중하며 살아가겠습니다.<br/>
             </p>
-            <Card className="p-3 shadow-sm rounded-4 text-center" style={{ backgroundColor: "#f9f2f3" }}>
+            <Card className="shadow-sm rounded-4 text-center" style={{ backgroundColor: "#f9f2f3" }}>
                   <Card.Body>
                     {accounts.map((account, idx) => (
                       <div
@@ -150,7 +150,7 @@ function App() {
                             </span>
                           </Col>
                           <Col xs="auto" className="text-end">
-                            <span style={{ fontSize: "0.9rem" }}>{account.bankInfo}</span>
+                            <span style={{ fontSize: "1.1rem" }}>{account.bankInfo}</span>
                           </Col>
                         </Row>
 
