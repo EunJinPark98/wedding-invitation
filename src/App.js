@@ -65,7 +65,7 @@ function App() {
 
 <Card className="p-3 mb-5 shadow-sm rounded-4 text-center">
   <h4 className="text-center mb-4">
-    신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon" /> 신부
+    신부 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon" /> 신랑
   </h4>
 
   <div className="position-relative d-inline-block">
