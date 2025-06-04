@@ -4,7 +4,7 @@ import { BsClipboard } from "react-icons/bs";
 import { Container, Card, Button, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
+import { motion } from "framer-motion";
 
 function App() {
   const [copied, setCopied] = useState("");
@@ -42,7 +42,7 @@ function App() {
         <Card.Body className="d-flex flex-column">
           <h1 className="mt-3">We are getting married</h1>
           <p>2025.06.22 (SUN) 11:00 AM</p>
-          <h1 className="mt-5">아직 청첩장 제작중입니다.<br/> (제작완료 예정 6/4)<br/>-은진-</h1>
+          <h1>아직 제작중 오늘 완성예정 -은진</h1>
         </Card.Body>
       </Card>
 
@@ -66,20 +66,63 @@ function App() {
         </Card.Body>
       </Card>
 
-      {/* 신랑신부 소개 */}
-      <Card className="p-3 mb-5 shadow-sm rounded-4">
-        <h4 className="text-center mb-4">신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon"/> 신부</h4>
-        <Row>
-          <Col xs={6} className="text-center">
-            <Image src="" className="profile-img" />
-            <p className="mt-2"><strong>김선일</strong></p>
-          </Col>
-          <Col xs={6} className="text-center">
-            <Image src="" className="profile-img" />
-            <p className="mt-2"><strong>박은진</strong></p>
-          </Col>
-        </Row>
-      </Card>
+<Card className="p-3 mb-5 shadow-sm rounded-4 text-center">
+  <h4 className="text-center mb-4">
+    신랑 <Image src="https://eunjinpark98.github.io/wedding-invitation/heart.png" className="deco2-icon" /> 신부
+  </h4>
+
+  <div className="position-relative d-inline-block">
+    <Image
+      src="https://eunjinpark98.github.io/wedding-invitation/wedding10.jpg"
+      className="profile-img"
+      style={{
+        width: '100%',
+        maxWidth: '200px',
+        height: 'auto',
+        borderRadius: '2rem',
+      }}
+    />
+
+    {/* 신부 이름 - 위에서 아래로 */}
+    <motion.div
+      initial={{ opacity: 0, y: -20 }} // 위쪽에서 시작
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '5%',
+        transform: 'translateY(60%)',
+        color: '#d63384', // 원래 핑크색
+        fontWeight: 'bold',
+        fontSize: '1.3rem',
+      }}
+    >
+      박은진
+    </motion.div>
+
+    {/* 신랑 이름 - 위에서 아래로, 살짝 지연 */}
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.3 }}
+      viewport={{ once: true }}
+      style={{
+        position: 'absolute',
+        top: '50%',
+        right: '5%',
+        transform: 'translateY(60%)',
+        color: '#0d6efd', // 원래 파란색
+        fontWeight: 'bold',
+        fontSize: '1.3rem',
+      }}
+    >
+      김선일
+    </motion.div>
+  </div>
+</Card>
+
 
       <div className="transparent-message text-center mt-5 mb-4">
         <Image src="https://eunjinpark98.github.io/wedding-invitation/deco1.png" className="deco1-icon"/>
@@ -93,7 +136,7 @@ function App() {
       <Card className="p-3 mb-5 shadow-sm rounded-4">
         <h4 className="text-center mb-3"></h4>
         <Row className="g-3">
-          {["noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg", "noImage.jpg"].map((img, idx) => (
+          {["wedding1.jpg", "wedding9.jpg", "wedding4.jpg", "wedding6.jpg", "wedding7.jpg", "wedding8.jpg", "wedding11.jpg", "wedding12.jpg"].map((img, idx) => (
             <Col xs={6} md={4} key={idx}>
               <img
                 src={`https://eunjinpark98.github.io/wedding-invitation/${img}`}
