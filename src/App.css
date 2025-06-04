@@ -31,7 +31,11 @@ body {
   background-color: #F9F5F6;
   color: #4A4A4A;
 }
-
+.name{
+  font-family: 'GangwonEduSaeeum_OTFMediumA';
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 .p1{
   font-family: 'GangwonEduSaeeum_OTFMediumA';
   font-size: 1.5rem;
@@ -86,27 +90,18 @@ h4, h5 {
   font-size: 1.8rem;
 }
 
-.main-hero-card {
-  font-family: 'YESMyoungjo-Regular';
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  color: white;
-  position: relative;
-  border: none;
-  height: 600px;
-}
-
-.main-hero-card p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-
-.main-hero-card h1{
-  font-family: 'SDSamliphopangche_Basic';
+.main-h1 {
+    font-family: 'SDSamliphopangche_Basic';
   color: #B76E79;
   font-size: 1.6rem;
   text-shadow: 1px 1px 4px #B76E79;
 }
+
+.main-p {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
 
 .profile-img {
   width: 200px;

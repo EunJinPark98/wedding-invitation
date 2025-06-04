@@ -36,15 +36,12 @@ function App() {
 {[...Array(9)].map((_, i) => (
   <div key={i} className="petal"></div>
 ))}
-      {/* 웨딩사진 배경 메인 박스 */}
-      <Card className="main-hero-card text-center mb-5"
-      style={{ backgroundImage: "url('/noImage.jpg')"}}>
-        <Card.Body className="d-flex flex-column">
-          <h1 className="mt-3">We are getting married</h1>
-          <p>2025.06.22 (SUN) 11:00 AM</p>
-          <h1>아직 제작중 오늘 완성예정 -은진</h1>
-        </Card.Body>
-      </Card>
+      <Row>
+        <Col className="text-center">
+          <h1 className="main-h1 mt-4">We are getting married</h1>
+          <p className="main-p">2025.06.22 (SUN) 11:00 AM</p>
+        </Col>
+      </Row>
 
       {/* 초대말씀 */}
       <Card className="p-3 mb-5 shadow-sm rounded-4 text-center">
@@ -92,12 +89,11 @@ function App() {
       style={{
         position: 'absolute',
         top: '50%',
-        left: '5%',
+        left: '0',
         transform: 'translateY(60%)',
-        color: '#d63384', // 원래 핑크색
-        fontWeight: 'bold',
-        fontSize: '1.3rem',
+        color: '#B0686F'
       }}
+      className="name"
     >
       박은진
     </motion.div>
@@ -111,12 +107,11 @@ function App() {
       style={{
         position: 'absolute',
         top: '50%',
-        right: '5%',
+        right: '0',
         transform: 'translateY(60%)',
-        color: '#0d6efd', // 원래 파란색
-        fontWeight: 'bold',
-        fontSize: '1.3rem',
+        color: '#627BAA'
       }}
+      className="name"
     >
       김선일
     </motion.div>
@@ -136,7 +131,7 @@ function App() {
       <Card className="p-3 mb-5 shadow-sm rounded-4">
         <h4 className="text-center mb-3"></h4>
         <Row className="g-3">
-          {["wedding1.jpg", "wedding9.jpg", "wedding4.jpg", "wedding6.jpg", "wedding7.jpg", "wedding8.jpg", "wedding11.jpg", "wedding12.jpg"].map((img, idx) => (
+          {["wedding12.jpg", "wedding11.jpg", "wedding4.jpg", "wedding6.jpg", "wedding8.jpg", "wedding7.jpg", "wedding2.jpg", "wedding3.jpg", "wedding1.jpg", "wedding9.jpg"].map((img, idx) => (
             <Col xs={6} md={4} key={idx}>
               <img
                 src={`https://eunjinpark98.github.io/wedding-invitation/${img}`}
